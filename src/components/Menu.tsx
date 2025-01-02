@@ -4,7 +4,7 @@ import { FiShoppingCart } from "react-icons/fi";
 export const Menu: React.FC = () => {
   return (
     <>
-      <nav className="bg-[#ffdd35] p-3 space-y-2">
+      <nav className="bg-[#ffdd35] p-3 space-y-2 md:hidden">
         <ul className="flex justify-between items-center">
           <li className="flex gap-3 items-center">
             <button className="text-[#0266ae] py-0.5 border-t-2 text-xs font-bold border-b-2 border-[#0266ae]">
