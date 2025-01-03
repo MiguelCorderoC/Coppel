@@ -1,5 +1,9 @@
-import { Location } from "../components/Location";
+import { PhotoSlide } from "../components/PhotoSlide";
 
 export const HomeView: React.FC = () => {
-  return <></>;
+  return (
+    <>
+      <PhotoSlide />
+    </>
+  );
 };
