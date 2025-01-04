@@ -3,7 +3,7 @@ import { RecomendationsDb } from "../db/Data";
 export const Recomendations: React.FC = () => {
   return (
     <>
-      <section className="space-y-3">
+      <section className="space-y-5 pb-8">
         <h2 className="font-semibold text-2xl">Recomendados para ti</h2>
         <div className="flex overflow-auto gap-2">
           {RecomendationsDb.map((item, index) => (

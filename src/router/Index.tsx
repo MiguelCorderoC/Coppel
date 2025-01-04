@@ -4,6 +4,8 @@ import { Banner } from "../components/Banner";
 import { Menu } from "../components/Menu";
 import { Delivery } from "../components/Delivery";
 import { ChatHelp } from "../components/ChatHelp";
+import { Footer } from "../components/Footer";
+import { Survey } from "../components/Survey";
 
 export const Index: React.FC = () => {
   return (
@@ -17,7 +19,9 @@ export const Index: React.FC = () => {
             <Route path="/" element={<HomeView />} />
           </Routes>
         </main>
+        <Survey />
         <ChatHelp />
+        <Footer />
       </BrowserRouter>
     </>
   );

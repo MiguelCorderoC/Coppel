@@ -6,7 +6,7 @@ export const Location: React.FC = () => {
   const locationStore = useLocationStore((state) => state);
   return (
     <>
-      <section className="px-4 fixed h-screen top-0 flex items-center justify-center">
+      <section className="px-4 fixed h-screen top-0 flex items-center justify-center z-10">
         <article className="border rounded-lg px-4 py-5 space-y-5 bg-white shadow">
           <div className="flex justify-between items-end">
             <h2 className="font-semibold text-xl">Ciudad de entrega</h2>
