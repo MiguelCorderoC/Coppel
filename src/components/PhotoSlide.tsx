@@ -35,12 +35,12 @@ export const PhotoSlide: React.FC = () => {
             />
           ))}
         </div>
-        <div className="flex justify-center gap-2">
+        <div className="flex justify-center gap-4">
           {PhotoSlideDb.map((_, index) => (
             <button
               key={index}
               onClick={() => setCount(index)}
-              className={`h-2 w-2 rounded-full ${
+              className={`h-3 w-3 rounded-full ${
                 count === index ? "bg-[#0266ae]" : "bg-gray-300"
               }`}
             ></button>
