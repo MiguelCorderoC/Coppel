@@ -5,6 +5,7 @@ import { Recomendations } from "../components/Recomendations";
 import { SecondSection } from "../components/SecondSection";
 import { SectionMain } from "../components/SectionMain";
 import { Visit } from "../components/Visit";
+import { Brands } from "../components/Brands";
 
 export const HomeView: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ export const HomeView: React.FC = () => {
       <Departaments />
       <Image />
       <SecondSection />
+      <Brands />
       <Recomendations />
       <Benefits />
       <Visit />
