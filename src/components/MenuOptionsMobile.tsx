@@ -27,7 +27,15 @@ export const MenuOptionsMobile: React.FC = () => {
         <LuCircleUser className="text-4xl" />
         <div className="flex flex-col">
           <span>!Hola!</span>
-          <span className="text-[#0266ae]">Iniciar sesion</span>
+          <Link
+            to={"/login"}
+            onClick={() => {
+              menuStore.setVisible(false);
+            }}
+            className="text-[#0266ae]"
+          >
+            Iniciar sesion
+          </Link>
         </div>
         <Link
           to={"/signin"}

@@ -7,27 +7,40 @@ import { ChatHelp } from "../components/ChatHelp";
 import { Footer } from "../components/Footer";
 import { Survey } from "../components/Survey";
 import { SignInView } from "../views/SignInView";
+import { LogInView } from "../views/LogInView";
+
+const routesWithoutComponents: string[] = ["/signin", "/login"];
 
 export const Index: React.FC = () => {
   const location = useLocation();
 
-  const isSignInRoute = location.pathname === "/signin";
+  const isExcludedRoute = routesWithoutComponents.includes(location.pathname);
 
   return (
     <>
-      {!isSignInRoute && (
-        <Banner text="Navidad millonaria tiene increibles premios" link="#" />
+      {!isExcludedRoute && (
+        <>
+          <Banner text="Navidad millonaria tiene increibles premios" link="#" />
+          <Menu />
+          <Delivery />
+        </>
       )}
-      {!isSignInRoute && <Menu />}
-      {!isSignInRoute && <Delivery />}
+
       <main className="bg-gray-100 px-3 py-2 space-y-5">
         <Routes>
           <Route path="/" element={<HomeView />} />
-          <Route path="signin" element={<SignInView />} />
+          <Route path="/signin" element={<SignInView />} />
+          <Route path="/login" element={<LogInView />} />
         </Routes>
       </main>
-      {!isSignInRoute && <Survey />}
-      {!isSignInRoute && <ChatHelp />}
+
+      {!isExcludedRoute && (
+        <>
+          <Survey />
+          <ChatHelp />
+        </>
+      )}
+
       <Footer />
     </>
   );
