@@ -20,7 +20,7 @@ export const Index: React.FC = () => {
     <>
       {!isExcludedRoute && (
         <>
-          <Banner text="Navidad millonaria tiene increibles premios" link="#" />
+          <Banner text="Envíos gratis en compras mayores a $499" link="#" />
           <Menu />
           <Delivery />
         </>

@@ -24,7 +24,7 @@ export const PhotoSlide: React.FC = () => {
 
   return (
     <>
-      <article className="space-y-2">
+      <article className="space-y-4 pb-3">
         <div ref={slideRef} className="overflow-hidden flex">
           {PhotoSlideDb.map((item, index) => (
             <img
@@ -40,7 +40,7 @@ export const PhotoSlide: React.FC = () => {
             <button
               key={index}
               onClick={() => setCount(index)}
-              className={`h-3 w-3 rounded-full ${
+              className={`h-2 w-2 rounded-full ${
                 count === index ? "bg-[#0266ae]" : "bg-gray-300"
               }`}
             ></button>
