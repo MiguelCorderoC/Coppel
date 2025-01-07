@@ -6,6 +6,7 @@ import { FaRegAddressCard } from "react-icons/fa";
 import { FaStore } from "react-icons/fa";
 import logo from "../assets/coppel.svg";
 import { useMenuStore } from "../store/menuStore";
+import { Link } from "react-router-dom";
 
 export const MenuOptionsMobile: React.FC = () => {
   const menuStore = useMenuStore((state) => state);
@@ -28,7 +29,15 @@ export const MenuOptionsMobile: React.FC = () => {
           <span>!Hola!</span>
           <span className="text-[#0266ae]">Iniciar sesion</span>
         </div>
-        <span className="text-[#0266ae]">Crear cuenta</span>
+        <Link
+          to={"/signin"}
+          onClick={() => {
+            menuStore.setVisible(false);
+          }}
+          className="text-[#0266ae]"
+        >
+          Crear cuenta
+        </Link>
       </article>
       <article className="px-3 py-2 border-b">
         <ul className="space-y-4">
