@@ -27,7 +27,7 @@ export const Departaments: React.FC = () => {
         {departaments.map((item, index) => (
           <div
             key={index}
-            className="text-center md:text-xs md:px-3 md:py-1 bg-white border rounded-xl shadow w-[24%] md:w-[11%] h-28 md:h-40 flex flex-col items-center justify-around"
+            className="text-center hover:border-[#0266ae] cursor-pointer transition duration-200 md:text-xs md:px-3 md:py-1 bg-white border rounded-xl shadow w-[24%] md:w-[11%] h-28 md:h-40 flex flex-col items-center justify-around"
           >
             <div className="flex flex-col items-center gap-2">
               <img src={item.photo} alt="" className="md:size-12" />
