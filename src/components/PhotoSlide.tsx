@@ -24,18 +24,13 @@ export const PhotoSlide: React.FC = () => {
   }, [count]);
 
   return (
-    <article className="space-y-4 relative pb-3 md:flex md:flex-col md:items-center">
+    <article className="space-y-6 relative pb-3 md:flex md:flex-col md:items-center">
       <div
         ref={slideRef}
-        className="overflow-hidden flex items-center md:w-[900px] md:h-[450px]"
+        className="overflow-hidden flex items-center md:w-[900px] rounded-xl"
       >
         {PhotoSlideDb.map((item, index) => (
-          <img
-            key={index}
-            src={item}
-            alt=""
-            className="w-full flex-shrink-0 rounded-xl"
-          />
+          <img key={index} src={item} alt="" className="w-full flex-shrink-0" />
         ))}
         {count != 0 && (
           <button
