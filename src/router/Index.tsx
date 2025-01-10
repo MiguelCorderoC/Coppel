@@ -9,6 +9,7 @@ import { Survey } from "../components/Survey";
 import { SignInView } from "../views/SignInView";
 import { LogInView } from "../views/LogInView";
 import { MenuDesktop } from "../components/MenuDesktop";
+import { MenuDowns } from "../components/MenuDowns";
 
 const routesWithoutComponents: string[] = ["/signin", "/login"];
 
@@ -24,6 +25,7 @@ export const Index: React.FC = () => {
           <Banner text="Envíos gratis en compras mayores a $499" link="#" />
           <Menu />
           <MenuDesktop />
+          <MenuDowns />
           <Delivery />
         </>
       )}
