@@ -8,6 +8,7 @@ import { Footer } from "../components/Footer";
 import { Survey } from "../components/Survey";
 import { SignInView } from "../views/SignInView";
 import { LogInView } from "../views/LogInView";
+import { MenuDesktop } from "../components/MenuDesktop";
 
 const routesWithoutComponents: string[] = ["/signin", "/login"];
 
@@ -22,11 +23,12 @@ export const Index: React.FC = () => {
         <>
           <Banner text="Envíos gratis en compras mayores a $499" link="#" />
           <Menu />
+          <MenuDesktop />
           <Delivery />
         </>
       )}
 
-      <main className="bg-gray-100 px-3 py-2 space-y-5 md:px-16 md:py-5">
+      <main className="px-3 py-2 space-y-5 md:px-16 md:py-5">
         <Routes>
           <Route path="/" element={<HomeView />} />
           <Route path="/signin" element={<SignInView />} />

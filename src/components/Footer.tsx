@@ -33,7 +33,7 @@ export const Footer: React.FC = () => {
             />
           </div>
         </article>
-        <ul className="bg-[#243444] px-2 font-semibold text-xl space-y-4 py-2">
+        <ul className="bg-[#243444] px-2 font-semibold text-lg space-y-4 py-2">
           <li className="flex justify-between items-center">
             <span>ACERCA DE COPPEL</span> <FaAngleDown />
           </li>

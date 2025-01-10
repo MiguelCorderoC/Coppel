@@ -14,7 +14,7 @@ export const Banner: React.FC<BannerProps> = ({ text, link }) => {
           to={link}
           className="bg-[#ffdd35] text-black rounded-full py-1.5 px-3 font-bold text-[14px]"
         >
-          Descubre mas
+          Aprovecha
         </Link>
       </header>
     </>
